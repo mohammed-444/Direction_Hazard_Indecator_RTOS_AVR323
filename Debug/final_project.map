@@ -1,0 +1,917 @@
+Archive member included because of file (symbol)
+
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                              ./Rtos_Source/queue.o (__udivmodhi4)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm323.o (exit)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                              ./Source/MCAL/gpio/gpio_PBcfg.o (__do_copy_data)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                              ./Source/APP/app.o (__do_clear_bss)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memcpy.o)
+                              ./Rtos_Source/queue.o (memcpy)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memset.o)
+                              ./Rtos_Source/tasks.o (memset)
+
+Allocating common symbols
+Common symbol       size              file
+
+xEventGroup         0x2               ./Source/APP/app.o
+task3ptr            0x2               ./Source/APP/app.o
+task2ptr            0x2               ./Source/APP/app.o
+task1ptr            0x2               ./Source/APP/app.o
+task0ptr            0x2               ./Source/APP/app.o
+task4ptr            0x2               ./Source/APP/app.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm323.o
+LOAD ./Source/MCAL/pwm/pwm.o
+LOAD ./Source/MCAL/gpio/gpio.o
+LOAD ./Source/MCAL/gpio/gpio_PBcfg.o
+LOAD ./Source/MCAL/EXT_INTERRUPT/EXT_INTTERUPT.o
+LOAD ./Source/ECUAL/led/led.o
+LOAD ./Source/ECUAL/led/led_PBcfg.o
+LOAD ./Source/ECUAL/button/button.o
+LOAD ./Source/ECUAL/button/button_PBcfg.o
+LOAD ./Source/APP/app.o
+LOAD ./Source/main.o
+LOAD ./Rtos_Source/portable/MemMang/heap_1.o
+LOAD ./Rtos_Source/portable/GCC/ATMega323/port.o
+LOAD ./Rtos_Source/croutine.o
+LOAD ./Rtos_Source/event_groups.o
+LOAD ./Rtos_Source/list.o
+LOAD ./Rtos_Source/queue.o
+LOAD ./Rtos_Source/tasks.o
+LOAD ./Rtos_Source/timers.o
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x5db4
+ *(.vectors)
+ .vectors       0x00000000       0x50 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm323.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000050                . = ALIGN (0x2)
+                0x00000050                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000050        0x0 linker stubs
+ *(.trampolines*)
+                0x00000050                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000050                __ctors_start = .
+ *(.ctors)
+                0x00000050                __ctors_end = .
+                0x00000050                __dtors_start = .
+ *(.dtors)
+                0x00000050                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000050        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm323.o
+                0x00000050                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000050        0xc c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm323.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x0000005c       0x16 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                0x0000005c                __do_copy_data
+ .init4         0x00000072       0x10 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000072                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000082        0x8 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm323.o
+ *(.init9)
+ *(.text)
+ .text          0x0000008a        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm323.o
+                0x0000008a                __vector_12
+                0x0000008a                __bad_interrupt
+                0x0000008a                __vector_6
+                0x0000008a                __vector_3
+                0x0000008a                __vector_11
+                0x0000008a                __vector_13
+                0x0000008a                __vector_17
+                0x0000008a                __vector_19
+                0x0000008a                __vector_5
+                0x0000008a                __vector_4
+                0x0000008a                __vector_9
+                0x0000008a                __vector_2
+                0x0000008a                __vector_15
+                0x0000008a                __vector_8
+                0x0000008a                __vector_14
+                0x0000008a                __vector_10
+                0x0000008a                __vector_16
+                0x0000008a                __vector_18
+ .text          0x0000008e        0x0 ./Source/MCAL/pwm/pwm.o
+ .text          0x0000008e        0x0 ./Source/MCAL/gpio/gpio.o
+ .text          0x0000008e        0x0 ./Source/MCAL/gpio/gpio_PBcfg.o
+ .text          0x0000008e        0x0 ./Source/MCAL/EXT_INTERRUPT/EXT_INTTERUPT.o
+ .text          0x0000008e        0x0 ./Source/ECUAL/led/led.o
+ .text          0x0000008e        0x0 ./Source/ECUAL/led/led_PBcfg.o
+ .text          0x0000008e        0x0 ./Source/ECUAL/button/button.o
+ .text          0x0000008e        0x0 ./Source/ECUAL/button/button_PBcfg.o
+ .text          0x0000008e        0x0 ./Source/APP/app.o
+ .text          0x0000008e        0x0 ./Source/main.o
+ .text          0x0000008e        0x0 ./Rtos_Source/portable/MemMang/heap_1.o
+ .text          0x0000008e        0x0 ./Rtos_Source/portable/GCC/ATMega323/port.o
+ .text          0x0000008e        0x0 ./Rtos_Source/croutine.o
+ .text          0x0000008e        0x0 ./Rtos_Source/event_groups.o
+ .text          0x0000008e        0x0 ./Rtos_Source/list.o
+ .text          0x0000008e        0x0 ./Rtos_Source/queue.o
+ .text          0x0000008e        0x0 ./Rtos_Source/tasks.o
+ .text          0x0000008e        0x0 ./Rtos_Source/timers.o
+ .text          0x0000008e        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .text          0x0000008e        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x0000008e        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text          0x0000008e        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text          0x0000008e        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memcpy.o)
+ .text          0x0000008e        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memset.o)
+                0x0000008e                . = ALIGN (0x2)
+ *(.text.*)
+ .text.PWM_Timer0_Start
+                0x0000008e       0x3a ./Source/MCAL/pwm/pwm.o
+                0x0000008e                PWM_Timer0_Start
+ .text.PWM_Timer2_Start
+                0x000000c8       0x3a ./Source/MCAL/pwm/pwm.o
+                0x000000c8                PWM_Timer2_Start
+ .text.PWM_Timer0_Stop
+                0x00000102       0x14 ./Source/MCAL/pwm/pwm.o
+                0x00000102                PWM_Timer0_Stop
+ .text.PWM_Timer2_Stop
+                0x00000116       0x14 ./Source/MCAL/pwm/pwm.o
+                0x00000116                PWM_Timer2_Stop
+ .text.GPIO_Init
+                0x0000012a      0x186 ./Source/MCAL/gpio/gpio.o
+                0x0000012a                GPIO_Init
+ .text.GPIO_ChannelGroupWrite
+                0x000002b0       0xc6 ./Source/MCAL/gpio/gpio.o
+                0x000002b0                GPIO_ChannelGroupWrite
+ .text.GPIO_ChannelGroupRead
+                0x00000376      0x11c ./Source/MCAL/gpio/gpio.o
+                0x00000376                GPIO_ChannelGroupRead
+ .text.GPIO_setupPinDirection
+                0x00000492      0x1d6 ./Source/MCAL/gpio/gpio.o
+                0x00000492                GPIO_setupPinDirection
+ .text.GPIO_writePin
+                0x00000668      0x1d6 ./Source/MCAL/gpio/gpio.o
+                0x00000668                GPIO_writePin
+ .text.GPIO_readPin
+                0x0000083e      0x136 ./Source/MCAL/gpio/gpio.o
+                0x0000083e                GPIO_readPin
+ .text.GPIO_togglePin
+                0x00000974       0x42 ./Source/MCAL/gpio/gpio.o
+                0x00000974                GPIO_togglePin
+ .text.GPIO_setupPortDirection
+                0x000009b6       0x88 ./Source/MCAL/gpio/gpio.o
+                0x000009b6                GPIO_setupPortDirection
+ .text.GPIO_writePort
+                0x00000a3e       0x88 ./Source/MCAL/gpio/gpio.o
+                0x00000a3e                GPIO_writePort
+ .text.GPIO_readPort
+                0x00000ac6       0x8a ./Source/MCAL/gpio/gpio.o
+                0x00000ac6                GPIO_readPort
+ .text.GLOBAL_INTERRUPT_ENABLE
+                0x00000b50       0x10 ./Source/MCAL/EXT_INTERRUPT/EXT_INTTERUPT.o
+                0x00000b50                GLOBAL_INTERRUPT_ENABLE
+ .text.GLOBAL_INTERRUPT_DISABLE
+                0x00000b60       0x10 ./Source/MCAL/EXT_INTERRUPT/EXT_INTTERUPT.o
+                0x00000b60                GLOBAL_INTERRUPT_DISABLE
+ .text.INT0_init
+                0x00000b70       0x36 ./Source/MCAL/EXT_INTERRUPT/EXT_INTTERUPT.o
+                0x00000b70                INT0_init
+ .text.INT0_deInit
+                0x00000ba6       0x1c ./Source/MCAL/EXT_INTERRUPT/EXT_INTTERUPT.o
+                0x00000ba6                INT0_deInit
+ .text.led_on   0x00000bc2       0x42 ./Source/ECUAL/led/led.o
+                0x00000bc2                led_on
+ .text.led_off  0x00000c04       0x42 ./Source/ECUAL/led/led.o
+                0x00000c04                led_off
+ .text.led_toggle
+                0x00000c46       0x40 ./Source/ECUAL/led/led.o
+                0x00000c46                led_toggle
+ .text.button_init
+                0x00000c86       0xaa ./Source/ECUAL/button/button.o
+                0x00000c86                button_init
+ .text.read_button
+                0x00000d30       0x48 ./Source/ECUAL/button/button.o
+                0x00000d30                read_button
+ .text.Task0    0x00000d78      0x19c ./Source/APP/app.o
+                0x00000d78                Task0
+ .text.Task1    0x00000f14       0x3c ./Source/APP/app.o
+                0x00000f14                Task1
+ .text.Task2    0x00000f50       0x52 ./Source/APP/app.o
+                0x00000f50                Task2
+ .text.Task3    0x00000fa2       0x52 ./Source/APP/app.o
+                0x00000fa2                Task3
+ .text.Task4    0x00000ff4       0x56 ./Source/APP/app.o
+                0x00000ff4                Task4
+ .text.__vector_1
+                0x0000104a       0x38 ./Source/APP/app.o
+                0x0000104a                __vector_1
+ .text.main     0x00001082       0xe6 ./Source/main.o
+                0x00001082                main
+ .text.pvPortMalloc
+                0x00001168       0xb4 ./Rtos_Source/portable/MemMang/heap_1.o
+                0x00001168                pvPortMalloc
+ .text.vPortFree
+                0x0000121c       0x18 ./Rtos_Source/portable/MemMang/heap_1.o
+                0x0000121c                vPortFree
+ .text.vPortInitialiseBlocks
+                0x00001234       0x16 ./Rtos_Source/portable/MemMang/heap_1.o
+                0x00001234                vPortInitialiseBlocks
+ .text.xPortGetFreeHeapSize
+                0x0000124a       0x1e ./Rtos_Source/portable/MemMang/heap_1.o
+                0x0000124a                xPortGetFreeHeapSize
+ .text.pxPortInitialiseStack
+                0x00001268      0x306 ./Rtos_Source/portable/GCC/ATMega323/port.o
+                0x00001268                pxPortInitialiseStack
+ .text.xPortStartScheduler
+                0x0000156e       0x6a ./Rtos_Source/portable/GCC/ATMega323/port.o
+                0x0000156e                xPortStartScheduler
+ .text.vPortEndScheduler
+                0x000015d8        0xe ./Rtos_Source/portable/GCC/ATMega323/port.o
+                0x000015d8                vPortEndScheduler
+ .text.vPortYield
+                0x000015e6       0xb2 ./Rtos_Source/portable/GCC/ATMega323/port.o
+                0x000015e6                vPortYield
+ .text.vPortYieldFromTick
+                0x00001698       0xba ./Rtos_Source/portable/GCC/ATMega323/port.o
+                0x00001698                vPortYieldFromTick
+ .text.prvSetupTimerInterrupt
+                0x00001752       0xb8 ./Rtos_Source/portable/GCC/ATMega323/port.o
+ .text.__vector_7
+                0x0000180a        0x6 ./Rtos_Source/portable/GCC/ATMega323/port.o
+                0x0000180a                __vector_7
+ .text.xCoRoutineCreate
+                0x00001810      0x128 ./Rtos_Source/croutine.o
+                0x00001810                xCoRoutineCreate
+ .text.vCoRoutineAddToDelayedList
+                0x00001938       0xc2 ./Rtos_Source/croutine.o
+                0x00001938                vCoRoutineAddToDelayedList
+ .text.prvCheckPendingReadyList
+                0x000019fa       0x94 ./Rtos_Source/croutine.o
+ .text.prvCheckDelayedList
+                0x00001a8e      0x15c ./Rtos_Source/croutine.o
+ .text.vCoRoutineSchedule
+                0x00001bea      0x102 ./Rtos_Source/croutine.o
+                0x00001bea                vCoRoutineSchedule
+ .text.prvInitialiseCoRoutineLists
+                0x00001cec       0x72 ./Rtos_Source/croutine.o
+ .text.xCoRoutineRemoveFromEventList
+                0x00001d5e       0x70 ./Rtos_Source/croutine.o
+                0x00001d5e                xCoRoutineRemoveFromEventList
+ .text.xEventGroupCreate
+                0x00001dce       0x3e ./Rtos_Source/event_groups.o
+                0x00001dce                xEventGroupCreate
+ .text.xEventGroupSync
+                0x00001e0c      0x172 ./Rtos_Source/event_groups.o
+                0x00001e0c                xEventGroupSync
+ .text.xEventGroupWaitBits
+                0x00001f7e      0x18c ./Rtos_Source/event_groups.o
+                0x00001f7e                xEventGroupWaitBits
+ .text.xEventGroupClearBits
+                0x0000210a       0x6c ./Rtos_Source/event_groups.o
+                0x0000210a                xEventGroupClearBits
+ .text.xEventGroupGetBitsFromISR
+                0x00002176       0x44 ./Rtos_Source/event_groups.o
+                0x00002176                xEventGroupGetBitsFromISR
+ .text.xEventGroupSetBits
+                0x000021ba      0x164 ./Rtos_Source/event_groups.o
+                0x000021ba                xEventGroupSetBits
+ .text.vEventGroupDelete
+                0x0000231e       0x62 ./Rtos_Source/event_groups.o
+                0x0000231e                vEventGroupDelete
+ .text.vEventGroupSetBitsCallback
+                0x00002380       0x3a ./Rtos_Source/event_groups.o
+                0x00002380                vEventGroupSetBitsCallback
+ .text.vEventGroupClearBitsCallback
+                0x000023ba       0x3a ./Rtos_Source/event_groups.o
+                0x000023ba                vEventGroupClearBitsCallback
+ .text.prvTestWaitCondition
+                0x000023f4       0x64 ./Rtos_Source/event_groups.o
+ .text.vListInitialise
+                0x00002458       0x54 ./Rtos_Source/list.o
+                0x00002458                vListInitialise
+ .text.vListInitialiseItem
+                0x000024ac       0x20 ./Rtos_Source/list.o
+                0x000024ac                vListInitialiseItem
+ .text.vListInsertEnd
+                0x000024cc       0x88 ./Rtos_Source/list.o
+                0x000024cc                vListInsertEnd
+ .text.vListInsert
+                0x00002554       0xd8 ./Rtos_Source/list.o
+                0x00002554                vListInsert
+ .text.uxListRemove
+                0x0000262c       0x98 ./Rtos_Source/list.o
+                0x0000262c                uxListRemove
+ .text.xQueueGenericReset
+                0x000026c4      0x156 ./Rtos_Source/queue.o
+                0x000026c4                xQueueGenericReset
+ .text.xQueueGenericCreate
+                0x0000281a       0xe8 ./Rtos_Source/queue.o
+                0x0000281a                xQueueGenericCreate
+ .text.prvInitialiseNewQueue
+                0x00002902       0x76 ./Rtos_Source/queue.o
+ .text.xQueueGenericSend
+                0x00002978      0x158 ./Rtos_Source/queue.o
+                0x00002978                xQueueGenericSend
+ .text.xQueueGenericSendFromISR
+                0x00002ad0       0xb8 ./Rtos_Source/queue.o
+                0x00002ad0                xQueueGenericSendFromISR
+ .text.xQueueGiveFromISR
+                0x00002b88       0xa2 ./Rtos_Source/queue.o
+                0x00002b88                xQueueGiveFromISR
+ .text.xQueueReceive
+                0x00002c2a      0x156 ./Rtos_Source/queue.o
+                0x00002c2a                xQueueReceive
+ .text.xQueueSemaphoreTake
+                0x00002d80      0x144 ./Rtos_Source/queue.o
+                0x00002d80                xQueueSemaphoreTake
+ .text.xQueuePeek
+                0x00002ec4      0x164 ./Rtos_Source/queue.o
+                0x00002ec4                xQueuePeek
+ .text.xQueueReceiveFromISR
+                0x00003028       0xae ./Rtos_Source/queue.o
+                0x00003028                xQueueReceiveFromISR
+ .text.xQueuePeekFromISR
+                0x000030d6       0x72 ./Rtos_Source/queue.o
+                0x000030d6                xQueuePeekFromISR
+ .text.uxQueueMessagesWaiting
+                0x00003148       0x30 ./Rtos_Source/queue.o
+                0x00003148                uxQueueMessagesWaiting
+ .text.uxQueueSpacesAvailable
+                0x00003178       0x4a ./Rtos_Source/queue.o
+                0x00003178                uxQueueSpacesAvailable
+ .text.uxQueueMessagesWaitingFromISR
+                0x000031c2       0x34 ./Rtos_Source/queue.o
+                0x000031c2                uxQueueMessagesWaitingFromISR
+ .text.vQueueDelete
+                0x000031f6       0x2e ./Rtos_Source/queue.o
+                0x000031f6                vQueueDelete
+ .text.prvCopyDataToQueue
+                0x00003224      0x14c ./Rtos_Source/queue.o
+ .text.prvCopyDataFromQueue
+                0x00003370       0x8e ./Rtos_Source/queue.o
+ .text.prvUnlockQueue
+                0x000033fe       0xa6 ./Rtos_Source/queue.o
+ .text.prvIsQueueEmpty
+                0x000034a4       0x3a ./Rtos_Source/queue.o
+ .text.xQueueIsQueueEmptyFromISR
+                0x000034de       0x3e ./Rtos_Source/queue.o
+                0x000034de                xQueueIsQueueEmptyFromISR
+ .text.prvIsQueueFull
+                0x0000351c       0x40 ./Rtos_Source/queue.o
+ .text.xQueueIsQueueFullFromISR
+                0x0000355c       0x44 ./Rtos_Source/queue.o
+                0x0000355c                xQueueIsQueueFullFromISR
+ .text.xQueueCRSend
+                0x000035a0       0xc2 ./Rtos_Source/queue.o
+                0x000035a0                xQueueCRSend
+ .text.xQueueCRReceive
+                0x00003662      0x11c ./Rtos_Source/queue.o
+                0x00003662                xQueueCRReceive
+ .text.xQueueCRSendFromISR
+                0x0000377e       0x82 ./Rtos_Source/queue.o
+                0x0000377e                xQueueCRSendFromISR
+ .text.xQueueCRReceiveFromISR
+                0x00003800       0xea ./Rtos_Source/queue.o
+                0x00003800                xQueueCRReceiveFromISR
+ .text.xTaskCreate
+                0x000038ea       0xf0 ./Rtos_Source/tasks.o
+                0x000038ea                xTaskCreate
+ .text.prvInitialiseNewTask
+                0x000039da      0x18a ./Rtos_Source/tasks.o
+ .text.prvAddNewTaskToReadyList
+                0x00003b64      0x17a ./Rtos_Source/tasks.o
+ .text.vTaskDelay
+                0x00003cde       0x44 ./Rtos_Source/tasks.o
+                0x00003cde                vTaskDelay
+ .text.vTaskStartScheduler
+                0x00003d22       0x6a ./Rtos_Source/tasks.o
+                0x00003d22                vTaskStartScheduler
+ .text.vTaskEndScheduler
+                0x00003d8c       0x18 ./Rtos_Source/tasks.o
+                0x00003d8c                vTaskEndScheduler
+ .text.vTaskSuspendAll
+                0x00003da4       0x18 ./Rtos_Source/tasks.o
+                0x00003da4                vTaskSuspendAll
+ .text.xTaskResumeAll
+                0x00003dbc      0x2a0 ./Rtos_Source/tasks.o
+                0x00003dbc                xTaskResumeAll
+ .text.xTaskGetTickCount
+                0x0000405c       0x2e ./Rtos_Source/tasks.o
+                0x0000405c                xTaskGetTickCount
+ .text.xTaskGetTickCountFromISR
+                0x0000408a       0x2a ./Rtos_Source/tasks.o
+                0x0000408a                xTaskGetTickCountFromISR
+ .text.uxTaskGetNumberOfTasks
+                0x000040b4       0x12 ./Rtos_Source/tasks.o
+                0x000040b4                uxTaskGetNumberOfTasks
+ .text.pcTaskGetName
+                0x000040c6       0x50 ./Rtos_Source/tasks.o
+                0x000040c6                pcTaskGetName
+ .text.xTaskCatchUpTicks
+                0x00004116       0x40 ./Rtos_Source/tasks.o
+                0x00004116                xTaskCatchUpTicks
+ .text.xTaskIncrementTick
+                0x00004156      0x32e ./Rtos_Source/tasks.o
+                0x00004156                xTaskIncrementTick
+ .text.vTaskSwitchContext
+                0x00004484       0xda ./Rtos_Source/tasks.o
+                0x00004484                vTaskSwitchContext
+ .text.vTaskPlaceOnEventList
+                0x0000455e       0x44 ./Rtos_Source/tasks.o
+                0x0000455e                vTaskPlaceOnEventList
+ .text.vTaskPlaceOnUnorderedEventList
+                0x000045a2       0xca ./Rtos_Source/tasks.o
+                0x000045a2                vTaskPlaceOnUnorderedEventList
+ .text.xTaskRemoveFromEventList
+                0x0000466c      0x288 ./Rtos_Source/tasks.o
+                0x0000466c                xTaskRemoveFromEventList
+ .text.vTaskRemoveFromUnorderedEventList
+                0x000048f4      0x21c ./Rtos_Source/tasks.o
+                0x000048f4                vTaskRemoveFromUnorderedEventList
+ .text.vTaskSetTimeOutState
+                0x00004b10       0x3c ./Rtos_Source/tasks.o
+                0x00004b10                vTaskSetTimeOutState
+ .text.vTaskInternalSetTimeOutState
+                0x00004b4c       0x32 ./Rtos_Source/tasks.o
+                0x00004b4c                vTaskInternalSetTimeOutState
+ .text.xTaskCheckForTimeOut
+                0x00004b7e       0xce ./Rtos_Source/tasks.o
+                0x00004b7e                xTaskCheckForTimeOut
+ .text.vTaskMissedYield
+                0x00004c4c       0x14 ./Rtos_Source/tasks.o
+                0x00004c4c                vTaskMissedYield
+ .text.prvIdleTask
+                0x00004c60       0x20 ./Rtos_Source/tasks.o
+ .text.prvInitialiseTaskLists
+                0x00004c80       0x72 ./Rtos_Source/tasks.o
+ .text.prvCheckTasksWaitingTermination
+                0x00004cf2        0xe ./Rtos_Source/tasks.o
+ .text.prvResetNextTaskUnblockTime
+                0x00004d00       0x44 ./Rtos_Source/tasks.o
+ .text.uxTaskResetEventItemValue
+                0x00004d44       0x4e ./Rtos_Source/tasks.o
+                0x00004d44                uxTaskResetEventItemValue
+ .text.ulTaskGenericNotifyTake
+                0x00004d92      0x16c ./Rtos_Source/tasks.o
+                0x00004d92                ulTaskGenericNotifyTake
+ .text.xTaskGenericNotifyWait
+                0x00004efe      0x1ee ./Rtos_Source/tasks.o
+                0x00004efe                xTaskGenericNotifyWait
+ .text.xTaskGenericNotify
+                0x000050ec      0x37c ./Rtos_Source/tasks.o
+                0x000050ec                xTaskGenericNotify
+ .text.xTaskGenericNotifyFromISR
+                0x00005468      0x3fe ./Rtos_Source/tasks.o
+                0x00005468                xTaskGenericNotifyFromISR
+ .text.vTaskGenericNotifyGiveFromISR
+                0x00005866      0x2a0 ./Rtos_Source/tasks.o
+                0x00005866                vTaskGenericNotifyGiveFromISR
+ .text.xTaskGenericNotifyStateClear
+                0x00005b06       0x92 ./Rtos_Source/tasks.o
+                0x00005b06                xTaskGenericNotifyStateClear
+ .text.ulTaskGenericNotifyValueClear
+                0x00005b98      0x104 ./Rtos_Source/tasks.o
+                0x00005b98                ulTaskGenericNotifyValueClear
+ .text.prvAddCurrentTaskToDelayedList
+                0x00005c9c       0xcc ./Rtos_Source/tasks.o
+ .text.libgcc   0x00005d68       0x28 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                0x00005d68                __udivmodhi4
+ .text.libgcc   0x00005d90        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00005d90        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00005d90        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text.avr-libc
+                0x00005d90       0x12 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memcpy.o)
+                0x00005d90                memcpy
+ .text.avr-libc
+                0x00005da2        0xe c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memset.o)
+                0x00005da2                memset
+                0x00005db0                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00005db0        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00005db0                exit
+                0x00005db0                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00005db0        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00005db4                _etext = .
+
+.data           0x00800060       0xe4 load address 0x00005db4
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm323.o
+ .data          0x00800060        0x0 ./Source/MCAL/pwm/pwm.o
+ .data          0x00800060        0x0 ./Source/MCAL/gpio/gpio.o
+ .data          0x00800060        0x0 ./Source/MCAL/gpio/gpio_PBcfg.o
+ .data          0x00800060        0x0 ./Source/MCAL/EXT_INTERRUPT/EXT_INTTERUPT.o
+ .data          0x00800060        0x0 ./Source/ECUAL/led/led.o
+ .data          0x00800060        0x0 ./Source/ECUAL/led/led_PBcfg.o
+ .data          0x00800060        0x0 ./Source/ECUAL/button/button.o
+ .data          0x00800060        0x0 ./Source/ECUAL/button/button_PBcfg.o
+ .data          0x00800060        0x0 ./Source/APP/app.o
+ .data          0x00800060       0x35 ./Source/main.o
+ .data          0x00800095        0x0 ./Rtos_Source/portable/MemMang/heap_1.o
+ .data          0x00800095        0x0 ./Rtos_Source/portable/GCC/ATMega323/port.o
+ .data          0x00800095        0x0 ./Rtos_Source/croutine.o
+ .data          0x00800095        0x0 ./Rtos_Source/event_groups.o
+ .data          0x00800095        0x0 ./Rtos_Source/list.o
+ .data          0x00800095        0x0 ./Rtos_Source/queue.o
+ .data          0x00800095        0x5 ./Rtos_Source/tasks.o
+ .data          0x0080009a        0x0 ./Rtos_Source/timers.o
+ .data          0x0080009a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .data          0x0080009a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x0080009a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .data          0x0080009a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .data          0x0080009a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memcpy.o)
+ .data          0x0080009a        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memset.o)
+ *(.data*)
+ .data.uxTopUsedPriority
+                0x0080009a        0x1 ./Rtos_Source/tasks.o
+                0x0080009a                uxTopUsedPriority
+ *(.rodata)
+ *(.rodata*)
+ .rodata.GPIO_ConfigPin
+                0x0080009b       0xa0 ./Source/MCAL/gpio/gpio_PBcfg.o
+                0x0080009b                GPIO_ConfigPin
+ .rodata.led_lookup_table
+                0x0080013b        0x0 ./Source/ECUAL/led/led_PBcfg.o
+                0x0080013b                led_lookup_table
+ .rodata.button_lookup_table
+                0x0080013b        0x8 ./Source/ECUAL/button/button_PBcfg.o
+                0x0080013b                button_lookup_table
+ *(.gnu.linkonce.d*)
+                0x00800144                . = ALIGN (0x2)
+ *fill*         0x00800143        0x1 00
+                0x00800144                _edata = .
+                0x00800144                PROVIDE (__data_end, .)
+
+.bss            0x00800144      0x35b
+                0x00800144                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800144        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm323.o
+ .bss           0x00800144        0x0 ./Source/MCAL/pwm/pwm.o
+ .bss           0x00800144        0x0 ./Source/MCAL/gpio/gpio.o
+ .bss           0x00800144        0x0 ./Source/MCAL/gpio/gpio_PBcfg.o
+ .bss           0x00800144        0x0 ./Source/MCAL/EXT_INTERRUPT/EXT_INTTERUPT.o
+ .bss           0x00800144        0x0 ./Source/ECUAL/led/led.o
+ .bss           0x00800144        0x0 ./Source/ECUAL/led/led_PBcfg.o
+ .bss           0x00800144        0x0 ./Source/ECUAL/button/button.o
+ .bss           0x00800144        0x0 ./Source/ECUAL/button/button_PBcfg.o
+ .bss           0x00800144        0x0 ./Source/APP/app.o
+ .bss           0x00800144        0x0 ./Source/main.o
+ .bss           0x00800144        0x0 ./Rtos_Source/portable/MemMang/heap_1.o
+ .bss           0x00800144        0x0 ./Rtos_Source/portable/GCC/ATMega323/port.o
+ .bss           0x00800144        0x0 ./Rtos_Source/croutine.o
+ .bss           0x00800144        0x0 ./Rtos_Source/event_groups.o
+ .bss           0x00800144        0x0 ./Rtos_Source/list.o
+ .bss           0x00800144        0x0 ./Rtos_Source/queue.o
+ .bss           0x00800144        0x0 ./Rtos_Source/tasks.o
+ .bss           0x00800144        0x0 ./Rtos_Source/timers.o
+ .bss           0x00800144        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .bss           0x00800144        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x00800144        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00800144        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x00800144        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memcpy.o)
+ .bss           0x00800144        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(memset.o)
+ *(.bss*)
+ .bss.hazard_isPressed
+                0x00800144        0x1 ./Source/APP/app.o
+                0x00800144                hazard_isPressed
+ .bss.xNextFreeByte
+                0x00800145        0x2 ./Rtos_Source/portable/MemMang/heap_1.o
+ .bss.pucAlignedHeap.1670
+                0x00800147        0x2 ./Rtos_Source/portable/MemMang/heap_1.o
+ .bss.ucHeap    0x00800149      0x2bc ./Rtos_Source/portable/MemMang/heap_1.o
+ .bss.pxDelayedCoRoutineList
+                0x00800405        0x2 ./Rtos_Source/croutine.o
+ .bss.pxOverflowDelayedCoRoutineList
+                0x00800407        0x2 ./Rtos_Source/croutine.o
+ .bss.pxCurrentCoRoutine
+                0x00800409        0x2 ./Rtos_Source/croutine.o
+                0x00800409                pxCurrentCoRoutine
+ .bss.uxTopCoRoutineReadyPriority
+                0x0080040b        0x1 ./Rtos_Source/croutine.o
+ .bss.xCoRoutineTickCount
+                0x0080040c        0x2 ./Rtos_Source/croutine.o
+ .bss.xLastTickCount
+                0x0080040e        0x2 ./Rtos_Source/croutine.o
+ .bss.xPassedTicks
+                0x00800410        0x2 ./Rtos_Source/croutine.o
+ .bss.pxReadyCoRoutineLists
+                0x00800412       0x12 ./Rtos_Source/croutine.o
+ .bss.xDelayedCoRoutineList1
+                0x00800424        0x9 ./Rtos_Source/croutine.o
+ .bss.xDelayedCoRoutineList2
+                0x0080042d        0x9 ./Rtos_Source/croutine.o
+ .bss.xPendingReadyCoRoutineList
+                0x00800436        0x9 ./Rtos_Source/croutine.o
+ .bss.pxCurrentTCB
+                0x0080043f        0x2 ./Rtos_Source/tasks.o
+                0x0080043f                pxCurrentTCB
+ .bss.uxCurrentNumberOfTasks
+                0x00800441        0x1 ./Rtos_Source/tasks.o
+ .bss.xTickCount
+                0x00800442        0x2 ./Rtos_Source/tasks.o
+ .bss.uxTopReadyPriority
+                0x00800444        0x1 ./Rtos_Source/tasks.o
+ .bss.xSchedulerRunning
+                0x00800445        0x1 ./Rtos_Source/tasks.o
+ .bss.xPendedTicks
+                0x00800446        0x2 ./Rtos_Source/tasks.o
+ .bss.xYieldPending
+                0x00800448        0x1 ./Rtos_Source/tasks.o
+ .bss.xNumOfOverflows
+                0x00800449        0x1 ./Rtos_Source/tasks.o
+ .bss.uxTaskNumber
+                0x0080044a        0x1 ./Rtos_Source/tasks.o
+ .bss.xNextTaskUnblockTime
+                0x0080044b        0x2 ./Rtos_Source/tasks.o
+ .bss.xIdleTaskHandle
+                0x0080044d        0x2 ./Rtos_Source/tasks.o
+ .bss.uxSchedulerSuspended
+                0x0080044f        0x1 ./Rtos_Source/tasks.o
+ .bss.pxReadyTasksLists
+                0x00800450       0x24 ./Rtos_Source/tasks.o
+ .bss.xDelayedTaskList1
+                0x00800474        0x9 ./Rtos_Source/tasks.o
+ .bss.xDelayedTaskList2
+                0x0080047d        0x9 ./Rtos_Source/tasks.o
+ .bss.pxDelayedTaskList
+                0x00800486        0x2 ./Rtos_Source/tasks.o
+ .bss.pxOverflowDelayedTaskList
+                0x00800488        0x2 ./Rtos_Source/tasks.o
+ .bss.xPendingReadyList
+                0x0080048a        0x9 ./Rtos_Source/tasks.o
+ *(COMMON)
+ COMMON         0x00800493        0xc ./Source/APP/app.o
+                0x00800493                xEventGroup
+                0x00800495                task3ptr
+                0x00800497                task2ptr
+                0x00800499                task1ptr
+                0x0080049b                task0ptr
+                0x0080049d                task4ptr
+                0x0080049f                PROVIDE (__bss_end, .)
+                0x00005db4                __data_load_start = LOADADDR (.data)
+                0x00005e98                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x0080049f        0x0
+                0x0080049f                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x0080049f                PROVIDE (__noinit_end, .)
+                0x0080049f                _end = .
+                0x0080049f                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000     0x93e4
+ *(.stab)
+ .stab          0x00000000      0x4b0 ./Source/MCAL/pwm/pwm.o
+ .stab          0x000004b0      0xa98 ./Source/MCAL/gpio/gpio.o
+                                0xc54 (size before relaxing)
+ .stab          0x00000f48      0x144 ./Source/MCAL/gpio/gpio_PBcfg.o
+                                0x444 (size before relaxing)
+ .stab          0x0000108c      0x384 ./Source/MCAL/EXT_INTERRUPT/EXT_INTTERUPT.o
+                                0x540 (size before relaxing)
+ .stab          0x00001410      0x318 ./Source/ECUAL/led/led.o
+                                0x324 (size before relaxing)
+ .stab          0x00001728      0x114 ./Source/ECUAL/led/led_PBcfg.o
+                                0x27c (size before relaxing)
+ .stab          0x0000183c      0x360 ./Source/ECUAL/button/button.o
+                                0x36c (size before relaxing)
+ .stab          0x00001b9c      0x114 ./Source/ECUAL/button/button_PBcfg.o
+                                0x294 (size before relaxing)
+ .stab          0x00001cb0      0xbf4 ./Source/APP/app.o
+                                0xdb0 (size before relaxing)
+ .stab          0x000028a4      0x2a0 ./Source/main.o
+                                0x930 (size before relaxing)
+ .stab          0x00002b44      0x498 ./Rtos_Source/portable/MemMang/heap_1.o
+                                0x7d4 (size before relaxing)
+ .stab          0x00002fdc      0x840 ./Rtos_Source/portable/GCC/ATMega323/port.o
+                                0xcfc (size before relaxing)
+ .stab          0x0000381c      0x84c ./Rtos_Source/croutine.o
+                                0xcd8 (size before relaxing)
+ .stab          0x00004068      0xc18 ./Rtos_Source/event_groups.o
+                               0x1134 (size before relaxing)
+ .stab          0x00004c80      0x474 ./Rtos_Source/list.o
+                                0x870 (size before relaxing)
+ .stab          0x000050f4     0x1fc8 ./Rtos_Source/queue.o
+                               0x24cc (size before relaxing)
+ .stab          0x000070bc     0x2184 ./Rtos_Source/tasks.o
+                               0x267c (size before relaxing)
+ .stab          0x00009240      0x1a4 ./Rtos_Source/timers.o
+                                0x6cc (size before relaxing)
+
+.stabstr        0x00000000     0x607a
+ *(.stabstr)
+ .stabstr       0x00000000     0x607a ./Source/MCAL/pwm/pwm.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(final_project.elf elf32-avr)
+LOAD linker stubs
